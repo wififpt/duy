@@ -7,7 +7,7 @@ let delayModel = 1000;
 let locationName = $('#location-name');
 let modalLocation = {
     construct: function () {
-        let locationId = Number(localStorage.getItem('locationid') != null ? localStorage.getItem('locationid') : 8);
+        let locationId = Number(localStorage.getItem('locationid') != null ? localStorage.getItem('locationid') : 58);
         let districtId = Number(localStorage.getItem('districtid') != null ? localStorage.getItem('districtid') : 1);
 
         $.post(
@@ -110,10 +110,10 @@ let modalLocation = {
                 let data = response.data;
                 if (response.error == 0) {
                     districtElement.empty().select2({
-                        placeholder: "Chá»n Quáº­n/Huyá»‡n",
+                        placeholder: "Chọn Quận/Huyện",
                     }).append(`<option></option>`);
                     wardElement.empty().select2({
-                        placeholder: "Chá»n PhÆ°á»ng/XĂ£",
+                        placeholder: "Chọn Phường/Xã",
                     }).append(`<option></option>`);
                     $.each(data, function (key, val) {
                         var option = '<option value="' + val.id + '">' + val.text + '</option>';
@@ -134,7 +134,7 @@ let modalLocation = {
                 let data = response.data;
                 if (response.error == 0) {
                     wardElement.empty().select2({
-                        placeholder: "Chá»n PhÆ°á»ng/XĂ£",
+                        placeholder: "Chọn Phường/Xã",
                     }).append(`<option></option>`);
                     $.each(data, function (key, val) {
                         var option = '<option value="' + val.id + '">' + val.text + '</option>';
