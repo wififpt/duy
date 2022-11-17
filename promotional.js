@@ -13,7 +13,7 @@ $(document).ready(function () {
         }
     });
 
-    let location = { "locationid": 8, "districtid": 1, "wardid": 1 };
+    let location = { "locationid": 58, "districtid": 1, "wardid": 1 };
     if (!modalLocation.getUrlParameter("locationid") || !modalLocation.getUrlParameter("districtid") || !modalLocation.getUrlParameter("wardid")) {
         
         if (modalLocation.getUrlParameter("locationid") || modalLocation.getUrlParameter("districtid") || modalLocation.getUrlParameter("wardid")) {
