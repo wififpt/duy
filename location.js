@@ -23,7 +23,7 @@ let modalLocation = {
                             var option = '<option value="' + val.id + '" selected>' + val.text + '</option>';
                         }
                         else {
-                            if (val.id == 8 && localStorage.getItem('locationid') == null) {
+                            if (val.id == 58 && localStorage.getItem('locationid') == null) {
                                 var option = '<option value="' + val.id + '" selected>' + val.text + '</option>';
                             }
                             else {
